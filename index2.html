@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WireFrame 3D Vizualizer</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="main-header">
+      <div class="titulo">
+        <h3>Graficación</h3>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <ul class="navbar-menu">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" href="#">
+            VISUALIZACION
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" id="eyeDown">Viewpoint Down</a></li>
+            <li><a class="dropdown-item" href="#" id="eyeUp">Viewpoint Up</a></li>
+            <li><a class="dropdown-item" href="#" id="eyeLeft">Viewpoint to Left</a></li>
+            <li><a class="dropdown-item" href="#" id="eyeRight">Viewpoint to Right</a></li>
+            <li><a class="dropdown-item" href="#" id="incrDist">Increase viewing distance</a></li>
+            <li><a class="dropdown-item" href="#" id="decrDist">Decrease viewing distance</a></li>
+          </ul>
+        
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" href="#">
+            Mover piezas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <li><a class="dropdown-item" href="#" id="pza1Izq">Pza izq</a></li>
+            <li><a class="dropdown-item" href="#" id="pza1Der">Pza der</a></li>
+            <li><a class="dropdown-item" href="#" id="pzaAlas">Pza Alas</a></li>
+            <li><a class="dropdown-item" href="#" id="pzaAnte">Pza Antena</a></li>
+          </ul>
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Development Team</a></li>
+            <li><a class="dropdown-item" href="#">Version</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+          </ul>
+      </ul>
+    </nav>
+    <article class="main-content">
+      <div class="featured-section">
+        <div class="featured-title">canvas</div>
+        <div class="canvas-container">
+          <canvas canvas="canvas" id="circlechart" width="800px" height="400px"></canvas>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <input type="file" id="file-input" />
+      <h3>Contenido del archivo:</h3>
+      <pre id="contenido-archivo"></pre>
+    </footer>
+  </div>
+
+  <script src="./dist/src/index.js" type="module"></script>
+</body>
+
+</html>
+
+

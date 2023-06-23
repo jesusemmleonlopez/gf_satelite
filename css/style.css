@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:url("fondo.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav article"
+    "footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 3fr;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #9c27b0;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #673ab7;
+  padding: 20px;
+  text-align: center;
+}
+
+article {
+  grid-area: article;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #3f51b5;
+  padding: 20px;
+}
+
+/* Estilos para el encabezado */
+.titulo {
+  text-align: center;
+}
+
+.titulo h3 {
+  margin: 0;
+  color: #fff;
+}
+
+/* Estilos para la barra de navegación */
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu {
+  position: relative;
+  background-color: #9575cd;
+  padding: 10px;
+  list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.dropdown-item:hover {
+  background-color: #5e35b1;
+}
+
+/* Estilos para el contenido del archivo */
+#file-input {
+  margin-top: 20px;
+}
+
+#contenido-archivo {
+  background-color: #3f51b5;
+  padding: 10px;
+  white-space: pre-wrap;
+  color: #fff;
+  overflow: auto;
+  max-height: 200px;
+}
+
+/* Estilos para el lienzo */
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.canvas {
+  background-color: transparent;
+}
+
+/* Estilos para los enlaces */
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu a:hover {
+  color: #ffc107;
+}
+
+.navbar-menu a:focus {
+  outline: none;
+  color: #ffc107;
+}
+
